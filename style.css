@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: auto;
+}
+
+:root {
+    --main-color:#d22e2e;
+    --text-color: #0f0c27;
+    --bg-color: #fff;
+    --hover-color: #f20707;
+
+    --big-font: 3.2rem;
+    --medium-font: 1.8rem;
+    --p-font: 0.941rem;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color:whitesmoke;
+  padding: 10px 0%;
+  z-index: 5;
+}
+
+
+.logo {
+    font-size: 1.61rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding-left: 100px;
+}
+
+header > ul {
+    display: flex;
+    padding-right: 100px;
+}
+
+header > ul a{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 600;    
+}
+
+header > ul a:hover {
+    color: var(--hover-color);
+}
+
+section {
+    padding: 50px 10%;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.hero .social {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;     
+}
+
+.hero .social .Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all .3s;
+  }
+  
+  .Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .Btn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
+  }
+
+.hero .social .LinkedinBtn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .LinkedinBtn .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 1px; /* Adjusted letter spacing */
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .LinkedinBtn .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #053eff;
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .LinkedinBtn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow effect */
+  }
+  
+  .LinkedinBtn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .LinkedinBtn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+  }
+  
+.hero .social .Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #053eff;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .Btn:hover .svgContainer {
+    background-color: rgba(214, 214, 214, 0.466);
+    backdrop-filter: blur(4px);
+  }
+  
+
+.hero .social a {
+    color:var(--text-color);
+    font-size: 22px;
+}
+
+.hero-text span {
+    font-size: var(--medium-font);
+    font-weight: 500;
+}
+
+.hero-text h1 {
+    font-size: var(--big-font);
+}
+
+.hero-text h2{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.hero-text p{
+    font-size: var(--p-font);
+    margin: 1rem 0rem;
+    
+}
+
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+  }
+  
+  .hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .hoverEffect div {
+    background: rgb(222,0,75);
+    background: linear-gradient(90deg, rgba(222,0,75,1) 0%, rgba(191,70,255,1) 49%, rgba(0,212,255,1) 100%);
+    border-radius: 40rem;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+  }
+  
+  .button:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  @keyframes effect {
+  
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 30px;
+
+}
+
+.heading span {
+    color: #02a646;
+    font-size: var(--p-font);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.about-img img {
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+.about-text p{
+    font-size:var(--p-font) ;
+    text-align: justify;
+}
+
+.about-text .information {
+    margin: 1rem 0;
+}
+
+.about-text .information .info-box {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.about-text .information .info-box i {
+    font-size: 22px;
+    margin-right: 1rem;
+}
+
+.skills-container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+
+.skills-img img {
+    width: 80%;
+}
+
+.bars {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.light-bar {
+    position: absolute;
+    bottom: 0;
+    background-color: hsla(260, 100%, 44%, 40%);
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.percentage-bar {
+    position: absolute;
+    bottom: 0;
+    background-color: blue;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.percentage-bar.html-bar {
+    width: 80%;
+}
+.percentage-bar.css-bar {
+    width: 75%;
+}
+.percentage-bar.sql-bar {
+    width: 75%;
+}
+.percentage-bar.python-bar {
+    width: 80%;
+}
+
+.services-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.services-box {
+  width: 220px;text-align: center;
+  border-radius: 0.5rem;
+  padding: 20px;
+  box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+  border-bottom: 2px solid darkblue;
+}
+
+.services-box:hover {
+  background-color: black;
+}
+
+.services-box i{
+  font-size: 50px;
+  color:black;
+}
+
+.services-box:hover i {
+  color: #22cf91;
+}
+
+.services-box h3{
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.7rem 0 0.4rem;
+}
+
+.services-box:hover h3 {
+  color: #fff;
+}
+
+.services-box a {
+  color: black;
+  font-weight: 500;
+}
+
+.services-box:hover a {
+  color: #8b8a8f;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.portfolio-img {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.portfolio-text p {
+  font-size:var(--p-font) ;
+  text-align: justify;
+}
+.portfolio-img img{
+  display: block;
+  width: 100%;;
+}
+
+.portfolio-img:hover img {
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 1rem;
+}
+
+.contact-form form input,textarea {
+  border-radius: 0.5rem;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background-color: hsl(260, 100%, 44%,0.1);
+}
+
+.contact-form form input::placeholder,textarea::placeholder {
+  color: #181818;
+}
+
+.contact-form form textarea {
+  resize: none;
+}
+
+.contact-form form .btn{
+  align-self: center;
+  background-color:skyblue;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.contact-form form .btn:hover {
+  background-color: #006B9A;
+}
+
+footer{
+  background-color: #ebebeb;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins";
+}
+
+footer i {
+  font-size: 22px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.copyright {
+  padding: 20px;
+  background-color: #181818;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins";
+}
